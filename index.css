@@ -99,6 +99,74 @@ h3{
     background-size: 11vmin 11vmin;
     opacity: 0.5;
 }
+.menu-item3 ~ .social1text{
+    transform: translate(170%);
+    opacity: 0;
+    transition: transform 400ms ease,
+    opacity 400ms ease;
+}
+.menu-item3:hover ~ .social1text{
+    transform: translate(0%);
+    opacity: 1;
+}
+.menu-item3 ~ .social2text{
+    transform: translate(170%);
+    opacity: 0;
+    transition: transform 600ms ease,
+    opacity 600ms ease;
+}
+.menu-item3:hover ~ .social2text{
+    transform: translate(0%);
+    opacity: 1;
+}
+.menu-item3 ~ .social3text{
+    transform: translate(170%);
+    opacity: 0;
+    transition: transform 800ms ease,
+    opacity 800ms ease;
+}
+.menu-item3:hover ~ .social3text{
+    transform: translate(0%);
+    opacity: 1;
+}
+.menu-item3 ~ .social4text{
+    transform: translate(190%);
+    opacity: 0;
+    transition: transform 1000ms ease,
+    opacity 1000ms ease;
+}
+.menu-item3:hover ~ .social4text{
+    transform: translate(0%);
+    opacity: 1;
+}
+.menu-item3 ~ .social1{
+    transform: translate(190%);
+    transition: transform 400ms ease;
+}
+.menu-item3:hover ~ .social1{
+    transform: translate(0%);
+}
+.menu-item3 ~ .social2{
+    transform: translate(190%);
+    transition: transform 600ms ease;
+}
+.menu-item3:hover ~ .social2{
+    transform: translate(0%);
+}
+.menu-item3 ~ .social3{
+    transform: translate(230%);
+    transition: transform 800ms ease;
+}
+.menu-item3:hover ~ .social3{
+    transform: translate(0%);
+}
+.menu-item3 ~ .social4{
+    transform: translate(230%);
+    transition: transform 1000ms ease;
+}
+.menu-item3:hover ~ .social4{
+    transform: translate(0%);
+}
 #background_menu{
     height: 100vh;
     width: 100vw;
@@ -153,4 +221,64 @@ h2{
 }
 .about_paragraph2{
     font-size: 25px;
+}
+.social1{
+    height: 100px;
+    position: absolute;
+    left: 90%;
+    top: 30%;
+}
+.social1text{
+    font-size: 32px;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    position: absolute;
+    top: 33%;
+    left: 71.5%;
+    color: white;
+}
+.social2{
+    height: 100px;
+    position: absolute;
+    left: 90%;
+    top: 40%;
+}
+.social2text{
+    font-size: 32px;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    position: absolute;
+    top: 43%;
+    left: 70%;
+    color: white;
+}
+.social3{
+    height: 80px;
+    position: absolute;
+    left: 90.5%;
+    top: 51.5%;
+}
+.social3text{
+    font-size: 32px;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    position: absolute;
+    top: 54%;
+    left: 71.5%;
+    color: white;
+}
+.social4{
+    height: 85px;
+    position: absolute;
+    left: 90.5%;
+    top: 62%;
+}
+.social4text{
+    font-size: 32px;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    position: absolute;
+    top: 64.5%;
+    left: 77%;
+    color: white;
 }
