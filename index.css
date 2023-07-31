@@ -21,6 +21,42 @@ body {
     background-size: 11vmin 11vmin;
     opacity: 0.5;
 }
+.menu-item1:hover ~ .all_cards{
+    opacity: 1;
+    rotate: -10deg;
+    box-shadow: 1px 1px 80px rgb(59, 59, 59);
+}
+.menu-item1:hover ~ .all_cards > .big_card2{
+    opacity: 1;
+    rotate: -15deg;
+    top: 10%;
+    left: -10%;
+    box-shadow: 1px 1px 80px rgb(59, 59, 59);
+}
+.menu-item1:hover ~ .all_cards > .medium_card{
+    rotate: -15deg;
+    top: -40%;
+    left: 70%;
+    box-shadow: 1px 1px 80px rgb(59, 59, 59);
+}
+.menu-item1:hover ~ .all_cards > .medium_card2{
+    rotate: -5deg;
+    top: -45%;
+    left: 80%;
+    box-shadow: 1px 1px 80px rgb(59, 59, 59);
+}
+.menu-item1:hover ~ .all_cards > .small_card{
+    rotate: 20deg;
+    top: 55%;
+    left: 65%;
+    box-shadow: 1px 1px 40px rgb(59, 59, 59);
+}
+.menu-item1:hover ~ .all_cards > .small_card2{
+    rotate: 0deg;
+    top: 55%;
+    left: 55%;
+    box-shadow: 1px 1px 40px rgb(59, 59, 59);
+}
 h3{
     display: inline;
     position: absolute;
@@ -281,4 +317,80 @@ h2{
     top: 64.5%;
     left: 77%;
     color: white;
+}
+.image1{
+    z-index: 1;
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}   
+.all_cards{
+    display: flex;
+    position: absolute;
+    top: 20%;
+    left: 64%;
+    scale: 0.7;
+    rotate: 5deg;
+    border-radius: 20px;
+    z-index: 1;
+    opacity: 0;
+    box-shadow: 0px 0px 0px rgb(100, 100, 100);
+    transition: rotate 400ms ease,
+    box-shadow 400ms ease,
+    opacity 400ms ease;
+}
+.big_card{
+    scale: 1;
+    z-index: 1;
+}
+.big_card2{
+    position: absolute;
+}
+.medium_card{
+    scale: 0.5;
+    position: absolute;
+    left: 40%;
+    top: -40%;
+    rotate: 15deg;
+    z-index: 3;
+    box-shadow: 0px 0px 0px rgb(100, 100, 100);
+    transition: rotate 800ms ease,
+    top 800ms ease, left 800ms ease,
+    box-shadow 800ms ease;
+}
+.medium_card2{
+    scale: 0.5;
+    position: absolute;
+    left: 40%;
+    top: -40%;
+    rotate: 15deg;
+    z-index: 2;
+    box-shadow: 0px 0px 0px rgb(100, 100, 100);
+    transition: rotate 800ms ease,
+    top 800ms ease, left 800ms ease,
+    box-shadow 800ms ease;
+}
+.small_card{
+    scale: 0.3;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    rotate: 10deg;
+    box-shadow: 0px 0px 0px rgb(100, 100, 100);
+    transition: rotate 800ms ease,
+    top 800ms ease, left 800ms ease,
+    box-shadow 800ms ease;
+}
+.small_card2{
+    scale: 0.3;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    rotate: 10deg;
+    box-shadow: 0px 0px 0px rgb(100, 100, 100);
+    transition: rotate 800ms ease,
+    top 800ms ease, left 800ms ease,
+    box-shadow 800ms ease;
 }
