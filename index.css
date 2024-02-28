@@ -14,6 +14,72 @@ body {
     font-size: 100px;
     z-index: 10;
 }
+.image1{
+    z-index: 1;
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}   
+.big_card{
+    display: flex;
+    scale: 1;
+    z-index: 1;
+    position: absolute;
+    top: 5%;
+    left: 76%;
+}
+.big_card2{
+    display: flex;
+    scale: 0.8;
+    z-index: 1;
+    position: absolute;
+    left: 55.8%;
+    top: -0.5%;
+
+}
+.medium_card{
+    display: flex;
+    position: absolute;
+    scale: 0.5;
+    left: 140%;
+    top: 90%;
+    z-index: 3;
+    box-shadow: 0px 0px 0px rgb(100, 100, 100);
+}
+.medium_card2{
+    scale: 0.5;
+    position: absolute;
+    left: 40%;
+    top: -40%;
+    z-index: 2;
+    box-shadow: 0px 0px 0px rgb(100, 100, 100);
+    transition: rotate 800ms ease,
+    top 800ms ease, left 800ms ease,
+    box-shadow 800ms ease;
+}
+.small_card{
+    scale: 0.3;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    box-shadow: 0px 0px 0px rgb(100, 100, 100);
+    transition: rotate 800ms ease,
+    top 800ms ease, left 800ms ease,
+    box-shadow 800ms ease;
+}
+.small_card2{
+    display: flex;
+    scale: 0.5;
+    position: absolute;
+    left: 59%;
+    top: 37%;
+    box-shadow: 0px 0px 0px rgb(100, 100, 100);
+    transition: rotate 800ms ease,
+    top 800ms ease, left 800ms ease,
+    box-shadow 800ms ease;
+}
 .menu-item1:hover{
     text-decoration: line-through;
 }
@@ -23,38 +89,22 @@ body {
 }
 .menu-item1:hover ~ .all_cards{
     opacity: 1;
-    rotate: -10deg;
-    box-shadow: 1px 1px 80px rgb(59, 59, 59);
+    /* box-shadow: 1px 1px 80px rgb(59, 59, 59); */
 }
 .menu-item1:hover ~ .all_cards > .big_card2{
     opacity: 1;
-    rotate: -15deg;
-    top: 10%;
-    left: -10%;
-    box-shadow: 1px 1px 80px rgb(59, 59, 59);
+    /* box-shadow: 1px 1px 80px rgb(59, 59, 59); */
 }
 .menu-item1:hover ~ .all_cards > .medium_card{
-    rotate: -15deg;
-    top: -40%;
-    left: 70%;
     box-shadow: 1px 1px 80px rgb(59, 59, 59);
 }
 .menu-item1:hover ~ .all_cards > .medium_card2{
-    rotate: -5deg;
-    top: -45%;
-    left: 80%;
     box-shadow: 1px 1px 80px rgb(59, 59, 59);
 }
 .menu-item1:hover ~ .all_cards > .small_card{
-    rotate: 20deg;
-    top: 55%;
-    left: 65%;
     box-shadow: 1px 1px 40px rgb(59, 59, 59);
 }
 .menu-item1:hover ~ .all_cards > .small_card2{
-    rotate: 0deg;
-    top: 55%;
-    left: 55%;
     box-shadow: 1px 1px 40px rgb(59, 59, 59);
 }
 h3{
@@ -135,74 +185,6 @@ h3{
     background-size: 11vmin 11vmin;
     opacity: 0.5;
 }
-.menu-item3 ~ .social1text{
-    transform: translate(170%);
-    opacity: 0;
-    transition: transform 400ms ease,
-    opacity 400ms ease;
-}
-.menu-item3:hover ~ .social1text{
-    transform: translate(0%);
-    opacity: 1;
-}
-.menu-item3 ~ .social2text{
-    transform: translate(170%);
-    opacity: 0;
-    transition: transform 600ms ease,
-    opacity 600ms ease;
-}
-.menu-item3:hover ~ .social2text{
-    transform: translate(0%);
-    opacity: 1;
-}
-.menu-item3 ~ .social3text{
-    transform: translate(170%);
-    opacity: 0;
-    transition: transform 800ms ease,
-    opacity 800ms ease;
-}
-.menu-item3:hover ~ .social3text{
-    transform: translate(0%);
-    opacity: 1;
-}
-.menu-item3 ~ .social4text{
-    transform: translate(190%);
-    opacity: 0;
-    transition: transform 1000ms ease,
-    opacity 1000ms ease;
-}
-.menu-item3:hover ~ .social4text{
-    transform: translate(0%);
-    opacity: 1;
-}
-.menu-item3 ~ .social1{
-    transform: translate(190%);
-    transition: transform 400ms ease;
-}
-.menu-item3:hover ~ .social1{
-    transform: translate(0%);
-}
-.menu-item3 ~ .social2{
-    transform: translate(190%);
-    transition: transform 600ms ease;
-}
-.menu-item3:hover ~ .social2{
-    transform: translate(0%);
-}
-.menu-item3 ~ .social3{
-    transform: translate(230%);
-    transition: transform 800ms ease;
-}
-.menu-item3:hover ~ .social3{
-    transform: translate(0%);
-}
-.menu-item3 ~ .social4{
-    transform: translate(230%);
-    transition: transform 1000ms ease;
-}
-.menu-item3:hover ~ .social4{
-    transform: translate(0%);
-}
 #background_menu{
     height: 100vh;
     width: 100vw;
@@ -258,139 +240,36 @@ h2{
 .about_paragraph2{
     font-size: 25px;
 }
-.social1{
-    height: 100px;
-    position: absolute;
-    left: 90%;
-    top: 30%;
+.socials{
+    opacity: 0.4;
 }
-.social1text{
-    font-size: 32px;
-    font-family: 'Raleway', sans-serif;
-    display: flex;
+.social1{
+    height: 50px;
     position: absolute;
-    top: 33%;
-    left: 71.5%;
-    color: white;
+    left:44.3%;
+    top: 92%;
 }
 .social2{
-    height: 100px;
+    height: 50px;
     position: absolute;
-    left: 90%;
-    top: 40%;
-}
-.social2text{
-    font-size: 32px;
-    font-family: 'Raleway', sans-serif;
-    display: flex;
-    position: absolute;
-    top: 43%;
-    left: 70%;
-    color: white;
+    left: 47%;
+    top: 92%;
 }
 .social3{
-    height: 80px;
+    height: 50px;
     position: absolute;
-    left: 90.5%;
-    top: 51.5%;
-}
-.social3text{
-    font-size: 32px;
-    font-family: 'Raleway', sans-serif;
-    display: flex;
-    position: absolute;
-    top: 54%;
-    left: 71.5%;
-    color: white;
+    left: 50%;
+    top: 92%;
 }
 .social4{
-    height: 85px;
+    height: 45px;
     position: absolute;
-    left: 90.5%;
-    top: 62%;
+    left: 53%;
+    top: 92%;
 }
-.social4text{
-    font-size: 32px;
-    font-family: 'Raleway', sans-serif;
-    display: flex;
+.social5{
+    height: 50px;
     position: absolute;
-    top: 64.5%;
-    left: 77%;
-    color: white;
-}
-.image1{
-    z-index: 1;
-    width: 40vmin;
-    height: 56vmin;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 10px;
-}   
-.all_cards{
-    display: flex;
-    position: absolute;
-    top: 20%;
-    left: 64%;
-    scale: 0.7;
-    rotate: 5deg;
-    border-radius: 20px;
-    z-index: 1;
-    opacity: 0;
-    box-shadow: 0px 0px 0px rgb(100, 100, 100);
-    transition: rotate 400ms ease,
-    box-shadow 400ms ease,
-    opacity 400ms ease;
-}
-.big_card{
-    scale: 1;
-    z-index: 1;
-}
-.big_card2{
-    position: absolute;
-}
-.medium_card{
-    scale: 0.5;
-    position: absolute;
-    left: 40%;
-    top: -40%;
-    rotate: 15deg;
-    z-index: 3;
-    box-shadow: 0px 0px 0px rgb(100, 100, 100);
-    transition: rotate 800ms ease,
-    top 800ms ease, left 800ms ease,
-    box-shadow 800ms ease;
-}
-.medium_card2{
-    scale: 0.5;
-    position: absolute;
-    left: 40%;
-    top: -40%;
-    rotate: 15deg;
-    z-index: 2;
-    box-shadow: 0px 0px 0px rgb(100, 100, 100);
-    transition: rotate 800ms ease,
-    top 800ms ease, left 800ms ease,
-    box-shadow 800ms ease;
-}
-.small_card{
-    scale: 0.3;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    rotate: 10deg;
-    box-shadow: 0px 0px 0px rgb(100, 100, 100);
-    transition: rotate 800ms ease,
-    top 800ms ease, left 800ms ease,
-    box-shadow 800ms ease;
-}
-.small_card2{
-    scale: 0.3;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    rotate: 10deg;
-    box-shadow: 0px 0px 0px rgb(100, 100, 100);
-    transition: rotate 800ms ease,
-    top 800ms ease, left 800ms ease,
-    box-shadow 800ms ease;
+    left: 56%;
+    top: 92%;
 }
