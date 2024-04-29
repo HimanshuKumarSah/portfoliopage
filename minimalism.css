@@ -33,7 +33,6 @@
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
-    box-shadow: 1px 1px 30px rgb(59, 59, 59);
 }
 #image-track {
     z-index: 1;
@@ -53,15 +52,32 @@
     color: rgb(87, 87, 87);
     display: flex;
     position: absolute;
-    top: 7.25%;
+    top: 7%;
     left: 2%;
     text-decoration: none;
     border-radius: 7px;
     padding: 7px;
-    transition: color 600ms ease;
-    
+    transition: color 600ms ease;  
 }
 .back_button:hover {
+    color: white;
+}
+.insta_button {
+    z-index: 3;
+    font-size: 35px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: rgb(87, 87, 87);
+    display: flex;
+    position: absolute;
+    top: 7%;
+    left: 88%;
+    text-decoration: none;
+    border-radius: 7px;
+    padding: 7px;
+    transition: color 600ms ease;  
+}
+.insta_button:hover {
     color: white;
 }
 #page-title {

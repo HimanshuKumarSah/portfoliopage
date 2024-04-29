@@ -28,15 +28,15 @@ const handleOnMove = e => {
   
   track.dataset.percentage = nextPercentage;
   
-  track.animate({
+  track.animate({ 
     transform: `translate(${nextPercentage}%, -50%)`
   }, { duration: 500, fill: "forwards" });
   
-  for(const image of track.getElementsByClassName("image")) {
-    image.animate({
-      objectPosition: `${100 + nextPercentage}% center`
-    }, { duration: 500, fill: "forwards" });
-  }
+  // for(const image of track.getElementsByClassName("image")) {
+  //   image.animate({
+  //     objectPosition: `${100 + nextPercentage}% center`
+  //   }, { duration: 500, fill: "forwards" });
+  // }
 }
 
 /* -- Had to add extra lines for touch events -- */
